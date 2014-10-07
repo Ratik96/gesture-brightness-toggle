@@ -1,3 +1,22 @@
+.
+.
+
+// Global variables
+private int rawYCoordinate;
+private int yCoordinate;
+private int maxHeight; 
+private int nFactor;
+
+.
+.
+
+// Helper method to get maxHeight
+private void getWindowData (Context context) {
+  private WindowManager windowManager;
+  windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
+  maxHeight = windowManager.getDefaultDisplay().getHeight();
+}
+
 @Override
 public boolean onTouch(View v, MotionEvent event) {
   switch(event.getActionMasked()){
@@ -17,3 +36,6 @@ public boolean onTouch(View v, MotionEvent event) {
   }
   return true;
 }
+
+.
+.
