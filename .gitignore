@@ -1,0 +1,2 @@
+# Preventing DS_Store from being pushed
+*.DS_Store

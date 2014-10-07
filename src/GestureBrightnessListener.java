@@ -1,7 +1,7 @@
 .
 .
 
-// Global variables
+// Add these as global variables
 private int rawYCoordinate;
 private int yCoordinate;
 private int maxHeight; 
@@ -11,6 +11,7 @@ private int nFactor;
 .
 
 // Helper method to get maxHeight
+// Place this anywhere in the file with the view you're working on
 private void getWindowData (Context context) {
   private WindowManager windowManager;
   windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
@@ -18,6 +19,7 @@ private void getWindowData (Context context) {
 }
 
 // Heart and soul of this implementation
+// Place this anywhere in the file with the view you're working on
 OnTouchListener gestureListener = new OnTouchListener() {
   @Override
   public boolean onTouch(View v, MotionEvent event) {
@@ -39,6 +41,12 @@ OnTouchListener gestureListener = new OnTouchListener() {
     return true;
   }
 };
+
+.
+.
+
+// Connecting view to listener
+yourView.setOnTouchListener(gestureListener);
 
 .
 .
