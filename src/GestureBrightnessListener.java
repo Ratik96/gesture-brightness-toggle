@@ -1,3 +1,10 @@
+/****** 
+
+@author Ratik Sharma 
+Guildlines: These methods have been tested only on RelativeLayout and LinearLayout instances as Views. But, technically, they should just fine with other View instances. You're free to try!    
+
+********/
+
 .
 .
 
@@ -7,6 +14,16 @@ private int rawYCoordinate;
 private int yCoordinate;
 private int maxHeight; 
 private int nFactor;
+
+.
+.
+
+/*********** onCreate() *************/
+
+// Connecting view to listener
+yourView.setOnTouchListener(gestureListener); // Replace yourView with the View instance you want to use
+
+/********** onCreate() end **********/
 
 .
 .
@@ -43,12 +60,3 @@ OnTouchListener gestureListener = new OnTouchListener() {
     return true;
   }
 };
-
-.
-.
-
-// Connecting view to listener
-yourView.setOnTouchListener(gestureListener); // Replace yourView with the View instance you want to use
-
-.
-.
