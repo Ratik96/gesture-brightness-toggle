@@ -48,7 +48,7 @@ OnTouchListener gestureListener = new OnTouchListener() {
 .
 
 // Connecting view to listener
-yourView.setOnTouchListener(gestureListener);
+yourView.setOnTouchListener(gestureListener); // Replace yourView with the View instance you want to use
 
 .
 .
