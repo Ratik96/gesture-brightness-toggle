@@ -2,6 +2,7 @@
 .
 
 // Add these as global variables
+private Context mContext = YourActivityName.this; // Replace YourActivityName with the name of your activity
 private int rawYCoordinate;
 private int yCoordinate;
 private int maxHeight; 
@@ -13,9 +14,10 @@ private int nFactor;
 // Helper method to get maxHeight
 // Place this anywhere in the file with the view you're working on
 private void getWindowData (Context context) {
-  private WindowManager windowManager;
-  windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
-  maxHeight = windowManager.getDefaultDisplay().getHeight();
+    WindowManager windowManager;
+    windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
+    maxHeight = windowManager.getDefaultDisplay().getHeight();
+    nFactor = maxHeight / 250;
 }
 
 // Heart and soul of this implementation
