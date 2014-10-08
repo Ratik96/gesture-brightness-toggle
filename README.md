@@ -24,5 +24,3 @@ The basic idea is that you can allow the user to swipe upwards or downwards on a
 * This can be used while making an alarm application where you want the user to be able to swipe up or down on the screen to make the screen go dim to use the device as a clock at night.
 
 * You could use this in a flashlight application to allow the user to dim down the screen to prevent two light sources (LED and screen) acting in opposite directions.
-
-* etc. 
