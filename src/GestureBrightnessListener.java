@@ -3,7 +3,7 @@
 @author Ratik Sharma 
 Guildlines: These methods have been tested only on RelativeLayout and LinearLayout instances as Views. But, technically, they should just fine with other View instances. You're free to try!    
 
-********/
+*******/
 
 .
 .
