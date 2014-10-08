@@ -4,7 +4,7 @@ This repository provides code snippets and a working algorithm to make a gesture
 
 ### How does this function? 
 
-The basic idea is that you can allow the user to swipe upwards or downwards on any portion of a View[1] to increase or decrease the phone's brightness. 
+The basic idea is that you can allow the user to swipe upwards or downwards on any portion of a View**[1]** to increase or decrease the phone's brightness. 
 
 **[1]** This method has only been tested on RelativeLayouts and LinearLayouts; although, in theory, it should work with all sorts of Views.
 
